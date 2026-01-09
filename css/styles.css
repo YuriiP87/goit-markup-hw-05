@@ -771,6 +771,10 @@ img {
 
 /* ===== POLICY CHECKBOX ===== */
 
+span.policy-custom {
+    display: inline-flex;
+}
+
 .form-policy {
     margin-bottom: 24px;
 }
