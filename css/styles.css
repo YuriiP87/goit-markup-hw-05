@@ -1,5 +1,6 @@
 :root {
     --cloud: #f4f4fd;
+    --checked-bg: #404bbf;
 }
 
 body {
@@ -785,7 +786,7 @@ img {
     color: #8e8f99;
 }
 
-.policy-custom {
+span.policy-custom {
     width: 16px;
     height: 16px;
 
@@ -813,9 +814,9 @@ img {
 
 /* ===== mentor pattern ===== */
 
-.policy-checkbox:checked+.policy-label>.policy-custom {
+.policy-checkbox:checked+.policy-label>span.policy-custom {
+    background-color: var(--checked-bg);
     border: none;
-    fill: var(--cloud);
 }
 
 .policy-checkbox:checked+.policy-label>.policy-custom .policy-icon {
