@@ -788,10 +788,6 @@ img {
 }
 
 span.policy-custom {
-    display: inline-flex;
-}
-
-span.policy-custom {
     width: 16px;
     height: 16px;
     
