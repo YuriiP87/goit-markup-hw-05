@@ -771,10 +771,6 @@ img {
 
 /* ===== POLICY CHECKBOX ===== */
 
-span.policy-custom {
-    display: inline-flex;
-}
-
 .form-policy {
     margin-bottom: 24px;
 }
@@ -791,10 +787,15 @@ span.policy-custom {
     color: #8e8f99;
 }
 
+.policy-custom {
+    display: inline-flex;
+}
+
 span.policy-custom {
     width: 16px;
     height: 16px;
-    
+
+    display: inline-flex;
     align-items: center;
     justify-content: center;
 
@@ -816,7 +817,7 @@ span.policy-custom {
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* ===== mentor pattern ===== */
+/* mentor pattern */
 
 .policy-checkbox:checked+.policy-label>span.policy-custom {
     background-color: var(--checked-bg);
