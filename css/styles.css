@@ -1,6 +1,7 @@
 :root {
     --cloud: #f4f4fd;
     --checked-bg: #404bbf;
+    --icon-checked-color: #F4F4FD;
 }
 
 body {
@@ -816,6 +817,7 @@ span.policy-custom {
 
 .policy-checkbox:checked+.policy-label>span.policy-custom {
     background-color: var(--checked-bg);
+    fill: var(--icon-checked-color);
     border: none;
 }
 
