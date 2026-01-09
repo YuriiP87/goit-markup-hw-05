@@ -516,7 +516,7 @@ img {
     padding: 8px 16px;
 
     font-size: 12px;
-    line-height: 1.5;
+    line-height: 2;
     letter-spacing: 0.04em;
 
     color: #ffffff;
@@ -525,8 +525,9 @@ img {
     border: 1px solid #ffffff;
     border-radius: 4px;
 
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
+
 
 .subscribe-input::placeholder {
     color: #ffffff;
@@ -540,7 +541,6 @@ img {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    gap: 16px;
 
     font-family: inherit;
     font-weight: 500;
@@ -565,6 +565,7 @@ img {
 
 .subscribe-icon {
     fill: #ffffff;
+    margin-left: 16px;
 }
 
 /* ===== MODAL ===== */
@@ -599,6 +600,7 @@ img {
     left: 50%;
 
     transform: translate(-50%, -50%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     width: 408px;
     min-height: 584px;
@@ -635,7 +637,7 @@ img {
     background-color: #e7e9fc;
 
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-        border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-close-icon {
@@ -647,7 +649,7 @@ img {
 .modal-close-btn:hover,
 .modal-close-btn:focus {
     background-color: #404bbf;
-    border-color: #404bbf;
+    border: none;
 }
 
 .modal-close-btn:hover .modal-close-icon,
@@ -726,7 +728,7 @@ img {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* focus border + icon */
+/* ===== focus border + icon ===== */
 .form-input:focus {
     border-color: #4d5ae5;
 }
@@ -746,7 +748,7 @@ img {
     line-height: 1.17;
     letter-spacing: 0.04em;
 
-    color: #2e2f42;
+    color: rgba(46, 47, 66, 0.4);
     background-color: transparent;
 
     border: 1px solid rgba(46, 47, 66, 0.4);
@@ -788,6 +790,7 @@ img {
     height: 16px;
 
     display: inline-flex;
+    fill: transparent;
     align-items: center;
     justify-content: center;
 
@@ -797,7 +800,8 @@ img {
     background-color: transparent;
 
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-        border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+            border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+            fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .policy-icon {
@@ -807,11 +811,11 @@ img {
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* mentor pattern */
+/* ===== mentor pattern ===== */
 
 .policy-checkbox:checked+.policy-label>.policy-custom {
-    background-color: #404bbf;
-    border-color: #404bbf;
+    border: none;
+    fill: var(--cloud);
 }
 
 .policy-checkbox:checked+.policy-label>.policy-custom .policy-icon {
